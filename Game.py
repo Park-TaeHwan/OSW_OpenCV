@@ -29,7 +29,7 @@ score = 0
 timeStart = time.time()
 totalTime = 20
 
-# Loop
+# Loop to cammera
 while True:
     success, img = cap.read()
     img = cv2.flip(img, 1)

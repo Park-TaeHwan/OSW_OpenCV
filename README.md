@@ -38,3 +38,11 @@ You can play the game with shor time, 30 seconds. And you can play 3D method bec
 ## **Limitations and improvements**
 1. You can only use one hand, not two hand. We can improve this program using two hands, and increase the difficulty of the game.
 2. Photos are only use 3 images, with planet image. We can add more image and people can get more interest.
+
+## **References:**
+
+All thanks to Murtaza's Workshop (from [Youtube1](https://www.youtube.com/watch?v=6DxN8G9vB50&list=PLMoSUbG1Q_r8jFS04rot-3NzidnV54Z2q&index=2), from [Youtube2](https://www.youtube.com/watch?v=3xfOa4yeOb0&t=1135s), from [Youtube3](https://www.youtube.com/watch?v=NGQgRH2_kq8&t=2513s) for making game projects. 
+
+We are also check some of function to Blog: 
+[Opencv control image](https://youbidan.tistory.com/19). 
+[Opencv take image](https://ansan-survivor.tistory.com/953). 

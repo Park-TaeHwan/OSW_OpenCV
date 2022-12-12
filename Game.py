@@ -21,6 +21,7 @@ y = [20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
 coff = np.polyfit(x, y, 2)  # y = Ax^2 + Bx + C
 
 # Game Variables
+number = 1
 cx, cy = 250, 250
 color = (255, 0, 255)
 counter = 0
@@ -32,6 +33,7 @@ totalTime = 20
 while True:
     success, img = cap.read()
     img = cv2.flip(img, 1)
+
 
     if time.time()-timeStart < totalTime:
 
@@ -60,15 +62,30 @@ while True:
             if counter == 3:
                 cx = random.randint(100, 1100)
                 cy = random.randint(100, 600)
+                number = random.randint(1,4)
                 color = (255, 0, 255)
                 score +=1
                 counter = 0
 
+        img1 = cv2.imread('1.png')
+        dst = cv2.resize(img1, dsize=(100, 100), interpolation=cv2.INTER_AREA)
+        img_cut = cv2.rectangle(dst, (0,0), (100, 100), color, thickness=3)
+
         # Draw Button
-        cv2.circle(img, (cx, cy), 30, color, cv2.FILLED)
-        cv2.circle(img, (cx, cy), 10, (255, 255, 255), cv2.FILLED)
-        cv2.circle(img, (cx, cy), 20, (255, 255, 255), 2)
-        cv2.circle(img, (cx, cy), 30, (50, 50, 50), 2)
+        if number == 1:
+            img1 = cv2.imread('1.png')
+            dst = cv2.resize(img1, dsize=(100, 100), interpolation=cv2.INTER_AREA)
+            img_cut = cv2.rectangle(dst, (0,0), (100, 100), color, thickness=3)
+        elif number == 2:
+            img1 = cv2.imread('2.jpg')
+            dst = cv2.resize(img1, dsize=(100, 100), interpolation=cv2.INTER_AREA)
+            img_cut = cv2.rectangle(dst, (0,0), (100, 100), color, thickness=3)
+        elif number == 3:
+            img1 = cv2.imread('3.jpg')
+            dst = cv2.resize(img1, dsize=(100, 100), interpolation=cv2.INTER_AREA)
+            img_cut = cv2.rectangle(dst, (0,0), (100, 100), color, thickness=3)
+
+        img[cy-50:cy+50, cx-50:cx+50] = img_cut
 
         # Game HUD
         cvzone.putTextRect(img, f'Time: {int(totalTime-(time.time()-timeStart))}',
@@ -82,6 +99,7 @@ while True:
 
 
     cv2.imshow("Image", img)
+    cv2.imshow("mask", img1)
     key = cv2.waitKey(1)
 
     if key == ord('r'):

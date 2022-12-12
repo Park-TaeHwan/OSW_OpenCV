@@ -26,7 +26,7 @@ color = (255, 0, 255)
 counter = 0
 score = 0
 timeStart = time.time()
-totalTime = 20
+totalTime = 30
 
 # Loop to camera
 while True:
@@ -96,7 +96,6 @@ while True:
 
 
     cv2.imshow("Image", img)
-    cv2.imshow("mask", img1)
     key = cv2.waitKey(1)
 
     if key == ord('r'):

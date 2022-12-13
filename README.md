@@ -34,6 +34,8 @@ python Game.py
 
 ## **Results:**
 You can play the game with shor time, 30 seconds. And you can play 3D method because you need to use your hand. And also, you need to control distance between camera and your hand.
+![Gif 1 of object dimensions](example1.gif)
+
 
 ## **Limitations and improvements**
 1. You can only use one hand, not two hand. We can improve this program using two hands, and increase the difficulty of the game.

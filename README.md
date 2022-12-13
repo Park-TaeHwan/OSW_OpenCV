@@ -4,21 +4,22 @@
 We are using [OpenCV](https://opencv.org/), [Python](https://www.python.org/), and [cvzone](https://github.com/cvzone/cvzone) program.
 
 ## **How to play it**
-1. Play steps
+Play steps
     1. Progress the python program file name "Game.py"
     2. Start with 30 seconds when we enter the game
     3. Touch the planet image and you get the score!
     4. And planet image move randomly to other location.
     5. When you hit the planet image, you get the total score, and it appears when the time end.
 
-2. Assumptions:
-    - There is a reference object in the image which is easy to find and it's width/height is know to us.
-3. Uses "Pixel Per Metric" ratio to calculate the size based on the given reference object.
-4. Reference object properties:
-    1. We should know the dimensions of this object (in terms of width or height).
-    2. We should be able to easily find this reference object in the image, either based on the placement of the object (like being placed in top-left corner, etc.) or via appearances (like distinctive color and/or shape).
-5. Used the United States quarter as the reference object.
-6. Used the OpenCV's find contours method to find the objects in the image and calculated their dimensions.
+
+## **How the program works**
+1. Read basic game gui and time
+2. Start time by 30 seconds right now.
+3. By cvzone function, read hands.
+4. By cvzone function, calculate distance with web camera and hand.
+5. Check that hand touch the image with results of distance.
+6. When check the image, move image randomly and do the same process until time out.
+
 
 ## **Requirements what you have to install package file**
  1. python

@@ -4,7 +4,7 @@
 We are using [OpenCV](https://opencv.org/), [Python](https://www.python.org/), and [cvzone](https://github.com/cvzone/cvzone) program.
 
 ## **How to play it**
--Play steps-
+- Play steps -
 1. Progress the python program file name "Game.py"
 2. Start with 30 seconds when we enter the game
 3. Touch the planet image and you get the score!

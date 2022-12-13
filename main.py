@@ -1,3 +1,7 @@
+# This program is just check function
+# Check function of read hand, and calculate distance.
+
+
 import cv2
 from cvzone.HandTrackingModule import HandDetector
 import math

@@ -1,5 +1,5 @@
 # OSW_OpenCV
-### Play a game touch by hand to image file, with planet image.
+### This program is play a game touch by hand to image file, with planet image.
 
 We are using [OpenCV](https://opencv.org/), [Python](https://www.python.org/), and [cvzone](https://github.com/cvzone/cvzone) program.
 

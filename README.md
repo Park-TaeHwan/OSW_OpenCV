@@ -4,12 +4,12 @@
 We are using [OpenCV](https://opencv.org/), [Python](https://www.python.org/), and [cvzone](https://github.com/cvzone/cvzone) program.
 
 ## **How to play it**
-Play steps
-    1. Progress the python program file name "Game.py"
-    2. Start with 30 seconds when we enter the game
-    3. Touch the planet image and you get the score!
-    4. And planet image move randomly to other location.
-    5. When you hit the planet image, you get the total score, and it appears when the time end.
+-Play steps-
+1. Progress the python program file name "Game.py"
+2. Start with 30 seconds when we enter the game
+3. Touch the planet image and you get the score!
+4. And planet image move randomly to other location.
+5. When you hit the planet image, you get the total score, and it appears when the time end.
 
 
 ## **How the program works**
